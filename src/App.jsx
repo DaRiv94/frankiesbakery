@@ -4,6 +4,7 @@ import { Header } from "./components/header";
 import { About } from "./components/about";
 import { ProductsPage } from "./components/productsPage";
 import { CheckoutPage } from "./components/checkoutPage";
+import { ChatWidget } from "./components/chatWidget";
 import JsonData from "./data/data.json";
 import { bakeryProducts } from "./data/products";
 import "./App.css";
@@ -207,6 +208,8 @@ const App = () => {
           <About data={landingPageData.About} />
         </>
       ) : null}
+
+      <ChatWidget />
     </div>
   );
 };
